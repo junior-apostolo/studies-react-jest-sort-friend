@@ -1,0 +1,56 @@
+$imgPerson: url("../../assets/participante.png");
+$imgOriginal: url("../../assets/logo.png");
+$imgSmall: url("../../assets/logo-pequeno.png");
+
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+.headerContainer {
+  display: flex;
+  height: 28.375rem;
+  background: #4b69fd;
+  align-items: center;
+  justify-content: space-around;
+
+  @media (max-width: $xs) {
+    height: 24rem;
+    min-width: 22.5625rem;
+    left: -0.0625rem;
+  }
+
+  &__imgLogo {
+    background-image: $imgOriginal;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21.9375rem;
+    height: 7.3125rem;
+    top: 7.6875rem;
+
+    @media (max-width: $xs) {
+      background-image: $imgSmall;
+      position: absolute;
+      width: 11.625rem;
+      height: 9.8294rem;
+      top: 3.4375rem;
+    }
+  }
+
+  &__imgPerson{
+    background-image: $imgPerson;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 28.125rem;
+    height: 17.3125rem;
+    top: 7.5625rem;
+
+    @media (max-width: $xs) {
+      width: 20.5rem;
+      top: 12.6875rem;
+      position: absolute;
+    }
+  }
+
+}
