@@ -8,8 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <RecoilRoot>
+        <Header />
         <Routes>
-          <Route path='/' element={Formulario}/>
+          <Route path='/' element={<Formulario />} />
         </Routes>
       </RecoilRoot>
     </BrowserRouter>
