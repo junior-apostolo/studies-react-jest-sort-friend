@@ -1,9 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Routes } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 import Header from './components/Header/Header';
 
 function App() {
   return (
-    <h1>Ola</h1>);
+    <BrowserRouter>
+      <RecoilRoot>
+        <Routes>
+          
+        </Routes>
+      </RecoilRoot>
+    </BrowserRouter>
+  );
 }
 
 export default App;
